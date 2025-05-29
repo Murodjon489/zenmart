@@ -1,5 +1,4 @@
-html,
-body {
+html body {
   margin: 0%;
   padding: 0%;
 }
@@ -10,4 +9,226 @@ a {
 
 p {
   margin: 0%;
+}
+
+NAVBAR body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+}
+
+.navbar_frame {
+  width: 100%;
+  background: #443297;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar_frame .container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 20px 15px;
+}
+
+.navbar_frame .navbar_top {
+  display: flex;
+  align-items: center;
+}
+
+.navbar_frame.navbar_top > a img {
+  height: 36px;
+  margin-right: 76px;
+}
+
+.navbar_frame .nav_search_frame {
+  display: flex;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 50px;
+  width: 650px;
+}
+
+.navbar_frame .nav_search_box {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.navbar_frame .category_list select {
+  border-right: 1px solid #d6d6d6;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.navbar_frame .category_list select {
+  border: none;
+  outline: none;
+  width: 140px;
+  height: 30px;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 15px;
+  color: #841e42;
+}
+
+.navbar_frame .nav_search_box input {
+  margin-left: 12px;
+  width: 387px;
+  height: 22px;
+  border: none;
+  outline: none;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 15px;
+  color: #626974;
+}
+
+.navbar_frame .nav_search_icon_box {
+  background: #f5c34b;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_frame .nav_top_menu {
+  margin-left: 59px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_frame .top_menu_box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar_frame .box_icon_box {
+  position: relative;
+  margin-right: 16px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(225, 225, 225, 0.1);
+  border-radius: 6px;
+}
+
+.navbar_frame .box_icon_box img {
+  width: 22px;
+  height: 22px;
+}
+
+.navbar_frame .box_info_box {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.box_info_box span {
+  font-weight: 400;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.navbar_frame .box_info_box strong {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.navbar_frame .basket_count {
+  width: 15px;
+  height: 15px;
+  background: #f5c34f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 8px;
+  color: #0b1e40;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.navbar_frame .navbar_bott {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  border-top: 1px solid #5746a1;
+}
+
+.navbar_frame .navbar_bott_menu_box {
+  margin-top: 10px;
+  display: flex;
+}
+
+.navbar_frame .browse_box {
+  width: 185px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #5746a1;
+}
+
+.navbar_frame .browse_box img {
+  margin-right: 10px;
+  width: 20px;
+  height: 18px;
+  margin-top: 2px; /* Iconni pastga tushuradi */
+}
+
+.navbar_frame .browse_box span {
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.navbar_frame .navbar_bott_menu_box .navbar_route_menu {
+  width: 670px;
+  margin-left: 12px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar_frame .navbar_route_menu .router_menu {
+  margin-right: 20px;
+  width: auto;
+  height: 41px;
+
+  display: flex;
+}
+
+.navbar_frame .router_menu a {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.navbar_frame .router_menu a.active {
+  color: #f5c34b;
+}
+
+.navbar_frame .navbar_route_menu .sorting_menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar_frame .sorting_menu span {
+  margin-left: 20px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
 }
