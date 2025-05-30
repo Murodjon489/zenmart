@@ -181,7 +181,7 @@ NAVBAR body {
   margin-right: 10px;
   width: 20px;
   height: 18px;
-  margin-top: 2px; /* Iconni pastga tushuradi */
+  margin-top: 2px;
 }
 
 .navbar_frame .browse_box span {
@@ -224,7 +224,7 @@ NAVBAR body {
 }
 
 .navbar_frame .sorting_menu span {
-  margin-left: 20px;
+  margin-left: 10px;
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
