@@ -4,6 +4,38 @@
   flex-direction: column;
 }
 
+.container .category_top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .category_top span {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: #041e42;
+  margin: 0;
+}
+
+.container .category_top a {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #041e42;
+}
+
+.container .category_top a:hover {
+  border-bottom: 2px solid #041e42;
+}
+
 .header_frame {
   position: relative;
   margin-top: 47px;
@@ -252,7 +284,7 @@
   flex-direction: column;
 }
 
-.container .category_top {
+.shop_category_frame .container .category_top {
   width: 100%;
   height: auto;
   display: flex;
@@ -261,7 +293,7 @@
   align-items: center;
 }
 
-.category_top span {
+.shop_category_frame .category_top span {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -271,7 +303,7 @@
   margin: 0;
 }
 
-.category_top a {
+.shop_category_frame .category_top a {
   font-family: "Jost";
   font-style: normal;
   font-weight: 500;
@@ -280,11 +312,11 @@
   color: #041e42;
 }
 
-.category_top a:hover {
+.shop_category_frame .category_top a:hover {
   border-bottom: 2px solid #041e42;
 }
 
-.container .category_wrapper {
+.shop_category_frame .container .category_wrapper {
   margin-top: 36px;
   width: 100%;
   gap: 87px;
@@ -326,6 +358,7 @@
 
   color: #041e42;
 }
+
 /* Selling Product  */
 .selling_product_frame {
   margin-top: 60px;
@@ -339,6 +372,11 @@
 }
 .selling_product_frame .container {
   flex-direction: column;
+}
+
+.product_wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .container .product .product_wrapper {
@@ -360,7 +398,7 @@
 }
 .product_wrapper .product_boxes {
   width: 1320px;
-  height: 576px;
+  height: 586px;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -376,25 +414,120 @@
 }
 .product_box .product_img_box {
   width: 100%;
-  height: 280px;
+  height: 300px;
 }
 .product_img_box .hover_box {
+  margin-bottom: 10px;
   display: none;
   width: 100%;
   height: 100%;
 
   flex-direction: column;
-  justify-content: flex-ends;
+  justify-content: flex-end;
   align-items: center;
 }
 .hover_box button {
+  margin-bottom: 10px;
   width: 260px;
   height: 50px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  outline: none;
+  border: none;
+
+  background: #0053f6;
+  box-shadow: 0px 5px 20px rgba(0, 83, 246, 0.1);
+  border-radius: 6px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #ffffff;
 }
 .product_img_box:hover .hover_box {
   display: flex;
+}
+
+.product_box .product_content_box {
+  padding: 5px 22px;
+  width: auto;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.product_content_box .product_title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #626974;
+}
+
+.product_content_box .product_desc {
+  margin-top: 7px;
+  height: 56px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #041e42;
+  overflow: hidden;
+}
+
+.product_content_box .review_box {
+  margin-top: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.review_box img {
+  margin-right: 5px;
+}
+
+.review_box span {
+  margin-left: 10px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #626974;
+}
+
+.product_content_box .price_box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.price_box strong {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #041e42;
+}
+
+.price_box span {
+  margin-left: 10px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration-line: line-through;
+  color: #626974;
 }
