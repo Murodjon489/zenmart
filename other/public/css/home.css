@@ -38,6 +38,56 @@
   border-bottom: 2px solid #041e42;
 }
 
+/*PAGINATION*/
+.container .pagination_box {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container .pagination_main {
+  width: auto;
+  height: 24px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pagination_main img {
+  cursor: pointer;
+}
+
+.container .pagination_main .pagination_dot {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.container .pagination_dot .dot {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.container .pagination_dot .active.dot {
+  border: 2px solid #112137;
+}
+
+.container .pagination_dot .dot div {
+  width: 4px;
+  height: 4px;
+  background: #112137;
+  border-radius: 50%;
+}
+
 .header_frame {
   position: relative;
   margin-top: 47px;
@@ -401,6 +451,7 @@
 .next_prev_box img {
   position: absolute;
   top: 50px;
+  cursor: pointer;
 }
 .product_wrapper .product_boxes {
   flex-shrink: 0;
@@ -539,47 +590,20 @@
   color: #626974;
 }
 
-.container .product_pagination_box {
-  margin-top: 30px;
+.home_page .adv_frame {
+  margin-top: 90px;
   width: 100%;
-  height: auto;
+  height: 120px;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.product_pagination_box .product_pagination_main {
-  width: auto;
-  height: 24px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.product_pagination_main .pagination_dot {
-  margin: 0 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-.pagination_dot .dot {
-  width: 20px;
-  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-}
 
-.pagination_dot .active.dot {
-  border: 2px solid #112137;
-}
-
-.pagination_dot .dot div {
-  width: 4px;
-  height: 4px;
-  background: #112137;
-  border-radius: 50%;
+  background-color: #e5edff;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #0053f6;
 }
